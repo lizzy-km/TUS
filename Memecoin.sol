@@ -13,7 +13,7 @@ contract TaurusStable is ERC20, Ownable, ERC20Permit {
         Ownable(msg.sender)
         ERC20Permit("TaurusStable")
     {
-        _mint(msg.sender, 10000000 * 10 ** decimals());
+        _mint(msg.sender, 1 * 10 ** decimals());
     }
 
     function decimals() public pure override returns(uint8){

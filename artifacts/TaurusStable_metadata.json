@@ -964,11 +964,11 @@
 			]
 		},
 		"Memecoin.sol": {
-			"keccak256": "0x6718b853b5cc53c183ea868a8e4ef0f0906d90062dc47239297306740743da47",
+			"keccak256": "0xe5755271588567615f3d4943aea89766b35b3cafd269929b0d17e70ab567569b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36dbd2517a5d7eb051500acd1ed32ea4f476c8ed1d483bace9bc616b11fdea48",
-				"dweb:/ipfs/QmTq8gzWGC6tsjf4UcDYHAC6peSqzTWxaLivpPAbnTZU2f"
+				"bzz-raw://04d29435c95358b5a1e8acf6e64b5b3f5c6ff7bb84a7292ed25711414fc39909",
+				"dweb:/ipfs/QmXcULtFsASvoVaKskC6dyWpnaBGieXvNyZiSCw5ZwHNok"
 			]
 		}
 	},
