@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -228,6 +228,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -237,6 +250,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "setNP",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "setP",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -422,9 +461,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Tus.sol": "MemeCoin"
+			".sol": "MemeCoin"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -436,6 +475,14 @@
 		"remappings": []
 	},
 	"sources": {
+		".sol": {
+			"keccak256": "0x78173be4bb28192e4e87b7199a1b8b554c4ef4d51835cf5496cda03fe262103d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://037794e9e895346d8fe275e6e35c7fc11a6f71fcb166dd37ae4af0f35bae8f9c",
+				"dweb:/ipfs/QmePibegr6SgQsnbm2cD2PmUpsP4Dwu1pBkWR5xZNbr8hC"
+			]
+		},
 		"@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
 			"keccak256": "0x19fdfb0f3b89a230e7dbd1cf416f1a6b531a3ee5db4da483f946320fc74afc0e",
 			"license": "MIT",
@@ -474,14 +521,6 @@
 			"urls": [
 				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
-			]
-		},
-		"Tus.sol": {
-			"keccak256": "0xe6add074cf2873d68984db0e1acab9c276d05d7bb886a01acd7ef2885323c06b",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://33c1951d4ef13f1e4efc8c7226a2c49803ec389d10fab3e88ece7a75903e10bb",
-				"dweb:/ipfs/QmRz21n1XAJgGKuV6UrmLBQ17VRVRf1V3EyTGK7DyJsY5t"
 			]
 		}
 	},
