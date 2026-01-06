@@ -369,7 +369,7 @@
 						"type": "uint8"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -622,7 +622,6 @@
 			}
 		],
 		"devdoc": {
-			"custom:security-contact": "quixdev@outlook.com",
 			"errors": {
 				"ECDSAInvalidSignature()": [
 					{
@@ -964,11 +963,11 @@
 			]
 		},
 		"Memecoin.sol": {
-			"keccak256": "0xe5755271588567615f3d4943aea89766b35b3cafd269929b0d17e70ab567569b",
+			"keccak256": "0xc17228057ee041c9be4d369d046c2498cb6bb6bdd25e01a2d44bf29bdcdf1da3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://04d29435c95358b5a1e8acf6e64b5b3f5c6ff7bb84a7292ed25711414fc39909",
-				"dweb:/ipfs/QmXcULtFsASvoVaKskC6dyWpnaBGieXvNyZiSCw5ZwHNok"
+				"bzz-raw://937694b2885ca2a9f23b2a1abdb44e743c6929e7fd9e390250585bca8d4d2745",
+				"dweb:/ipfs/QmPxDAF4wyjJCPAbE91b7b1o5EsjQJizvBm6FtdkCy8Ygk"
 			]
 		}
 	},
