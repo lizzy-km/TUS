@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
@@ -360,6 +360,37 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "burnFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -413,24 +444,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -741,6 +754,12 @@
 				"balanceOf(address)": {
 					"details": "Returns the value of tokens owned by `account`."
 				},
+				"burn(uint256)": {
+					"details": "Destroys a `value` amount of tokens from the caller. See {ERC20-_burn}."
+				},
+				"burnFrom(address,uint256)": {
+					"details": "Destroys a `value` amount of tokens from `account`, deducting from the caller's allowance. See {ERC20-_burn} and {ERC20-allowance}. Requirements: - the caller must have allowance for ``accounts``'s tokens of at least `value`."
+				},
 				"decimals()": {
 					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the default value returned by this function, unless it's overridden. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
 				},
@@ -790,7 +809,7 @@
 		"compilationTarget": {
 			"Memecoin.sol": "TaurusStable"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -840,6 +859,14 @@
 			"urls": [
 				"bzz-raw://5282825a626cfe924e504274b864a652b0023591fa66f06a067b25b51ba9b303",
 				"dweb:/ipfs/QmeCfPykghhMc81VJTrHTC7sF6CRvaA1FXVq2pJhwYp1dV"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol": {
+			"keccak256": "0x2659248df25e34000ed214b3dc8da2160bc39874c992b477d9e2b1b3283dc073",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c345af1b0e7ea28d1216d6a04ab28f5534a5229b9edf9ca3cd0e84950ae58d26",
+				"dweb:/ipfs/QmY63jtSrYpLRe8Gj1ep2vMDCKxGNNG3hnNVKBVnrs2nmA"
 			]
 		},
 		"@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol": {
@@ -963,11 +990,11 @@
 			]
 		},
 		"Memecoin.sol": {
-			"keccak256": "0xc17228057ee041c9be4d369d046c2498cb6bb6bdd25e01a2d44bf29bdcdf1da3",
+			"keccak256": "0x0af5ffe72aef79b4919059acb89365751080678ca785cc48a79154eeadda2b23",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://937694b2885ca2a9f23b2a1abdb44e743c6929e7fd9e390250585bca8d4d2745",
-				"dweb:/ipfs/QmPxDAF4wyjJCPAbE91b7b1o5EsjQJizvBm6FtdkCy8Ygk"
+				"bzz-raw://2956cf467f9b0c5d5e0e8067475afe64ef5b61458fe2871e211944a41c93e6bb",
+				"dweb:/ipfs/QmV3rs9QEqvzxPB8thYnWy52kDmkC95bgCvuowNTNwDnkL"
 			]
 		}
 	},
