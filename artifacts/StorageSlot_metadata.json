@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Library for reading and writing primitive types to specific storage slots. Storage slots are often used to avoid storage conflict when dealing with upgradeable contracts. This library helps with reading and writing to such slots without the need for inline assembly. The functions in this library return Slot structs that contain a `value` member that can be used to read or write. Example usage to set ERC1967 implementation slot: ```solidity contract ERC1967 {     bytes32 internal constant _IMPLEMENTATION_SLOT = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;     function _getImplementation() internal view returns (address) {         return StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value;     }     function _setImplementation(address newImplementation) internal {         require(newImplementation.code.length > 0);         StorageSlot.getAddressSlot(_IMPLEMENTATION_SLOT).value = newImplementation;     } } ```",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/StorageSlot.sol": "StorageSlot"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/StorageSlot.sol": {
+			"keccak256": "0x9f4f504b17af14bba4f92a5f94eabaaf44a0e8238069896a8f2519661ee4a402",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c4c707b4f6df95b1bf7092d8cfc23506aa0f7ee3f034683a16f32842bd6e1e2c",
+				"dweb:/ipfs/QmXhErSz8aLHWQor78ry5DPGUzXq9tmSTPYLbFZbHLHteR"
+			]
+		}
+	},
+	"version": 1
+}

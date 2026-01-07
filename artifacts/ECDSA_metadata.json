@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "ECDSAInvalidSignature",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "length",
+						"type": "uint256"
+					}
+				],
+				"name": "ECDSAInvalidSignatureLength",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "ECDSAInvalidSignatureS",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "Elliptic Curve Digital Signature Algorithm (ECDSA) operations. These functions can be used to verify that a message was signed by the holder of the private keys of a given address.",
+			"errors": {
+				"ECDSAInvalidSignature()": [
+					{
+						"details": "The signature derives the `address(0)`."
+					}
+				],
+				"ECDSAInvalidSignatureLength(uint256)": [
+					{
+						"details": "The signature has an invalid length."
+					}
+				],
+				"ECDSAInvalidSignatureS(bytes32)": [
+					{
+						"details": "The signature has an S value that is in the upper half order."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/cryptography/ECDSA.sol": "ECDSA"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/cryptography/ECDSA.sol": {
+			"keccak256": "0xa9ad2f1b3f75311da2a8c50b243c14e6a128b65446f33fd5333c7ca61a3ea647",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://018af02d53f81eb940da7355f60aa89a0e176559cf040b0bb28f93d5fe2be95e",
+				"dweb:/ipfs/QmetDAxq7JPqw2XjMZpqVpZX1QTXJooA6SGF4iAacoKXrM"
+			]
+		}
+	},
+	"version": 1
+}

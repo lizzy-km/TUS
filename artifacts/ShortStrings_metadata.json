@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "InvalidShortString",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"name": "StringTooLong",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"details": "This library provides functions to convert short memory strings into a `ShortString` type that can be used as an immutable variable. Strings of arbitrary length can be optimized using this library if they are short enough (up to 31 bytes) by packing them with their length (1 byte) in a single EVM word (32 bytes). Additionally, a fallback mechanism can be used for every other case. Usage example: ```solidity contract Named {     using ShortStrings for *;     ShortString private immutable _name;     string private _nameFallback;     constructor(string memory contractName) {         _name = contractName.toShortStringWithFallback(_nameFallback);     }     function name() external view returns (string memory) {         return _name.toStringWithFallback(_nameFallback);     } } ```",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/ShortStrings.sol": "ShortStrings"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/ShortStrings.sol": {
+			"keccak256": "0xbbd677d9730e606a98a8e99c66ea2665e1be7b2218245ab4bc8340f5d148c032",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4220d046e8bb1591d65a95fe8f85474f4fd4ef88679f7960c5a25d2be40edd7b",
+				"dweb:/ipfs/QmcWmnwx82BAWKBDGxjmtgmHtgf9Mgo4PTTxvGFb2CJ7Kr"
+			]
+		},
+		".deps/https/raw.githubusercontent.com/OpenZeppelin/openzeppelin-contracts/v5.0.1/contracts/utils/StorageSlot.sol": {
+			"keccak256": "0x9f4f504b17af14bba4f92a5f94eabaaf44a0e8238069896a8f2519661ee4a402",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c4c707b4f6df95b1bf7092d8cfc23506aa0f7ee3f034683a16f32842bd6e1e2c",
+				"dweb:/ipfs/QmXhErSz8aLHWQor78ry5DPGUzXq9tmSTPYLbFZbHLHteR"
+			]
+		}
+	},
+	"version": 1
+}
